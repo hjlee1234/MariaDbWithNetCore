@@ -1,5 +1,5 @@
 ﻿using System;
-using MariaDbWithNetCore.Model.Entity;
+using MariaDbWithNetCore.Entity;
 using Microsoft.EntityFrameworkCore;
 
 namespace MariaDbWithNetCore.Api

@@ -6,13 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MariaDbWithNetCore.Model\MariaDbWithNetCore.Model.csproj" />
+    <Folder Include="Commands\" />
+    <Folder Include="Qyeries\" />
   </ItemGroup>
 
 </Project>
