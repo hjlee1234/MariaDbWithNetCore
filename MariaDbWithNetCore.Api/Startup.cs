@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using MediatR;
+
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -20,6 +22,7 @@ namespace MariaDbWithNetCore.Api
                 options.UseMySql(_configuration.GetConnectionString("DefaultConnection")));
 
             services.AddMvc();
+            services.AddMediatR(typeof(Startup).Assembly);
         }
 
 
